@@ -118,23 +118,11 @@ function ContactPage() {
               href={whatsappLink()}
               variant="whatsapp"
             />
-            <ActionButton
-              icon={Navigation}
-              label="Get Directions"
-              href={site.mapEmbed.replace("&output=embed", "")}
-              variant="outline"
-            />
-            <ActionButton
-              icon={Mail}
-              label="Email Us"
-              href={`mailto:${site.email}`}
-              variant="outline"
-            />
           </div>
         </div>
       </section>
 
-      {/* SECTION 4 — OFFICE & MAP */}
+      {/* SECTION 4 — OFFICE & MAP */}d
       <section className="bg-background py-16 lg:py-24">
         <div className="container-page">
           <div className="mx-auto max-w-2xl text-center">

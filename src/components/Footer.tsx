@@ -19,8 +19,12 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 text-sm leading-relaxed text-white/70">
-            A family-owned, founder-led real estate firm trusted by generations of Thanjavur
-            families, investors and businesses. Building trust through every property.
+            Setting the standard of excellence
+            in real estate since 2000.
+            Providing verified premium properties
+            with complete legal transparency.
+            Empowering clients to build wealth
+            through secure land investments.
           </p>
           <div className="mt-5 flex items-center gap-3">
             <a

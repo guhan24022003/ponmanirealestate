@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Quote, ShieldCheck, Award, ArrowRight, Milestone } from "lucide-react";
-import founderImg from "@/assets/founder.jpg";
-import guhanImg from "@/assets/guhan.jpg";
+import founderImg from "@/assets/Dakshinamoorthy-Raghavan.png";
+import guhanImg from "@/assets/Guhan-Dakshinamoorthy.png";
 
 const timeline = [
   { year: "1988", title: "Founder Enters Industry", text: "R. Dakshinamoorthy begins his real estate journey and gains practical experience through land transactions, plot development and customer relations." },
@@ -16,7 +16,6 @@ function AboutPage() {
   return (
     <>
       <Story />
-      <Timeline />
       <GuhanSection />
     </>
   );
@@ -24,17 +23,17 @@ function AboutPage() {
 
 function Story() {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-[whitesmoke] py-16 lg:py-24">
       <div className="container-page grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
 
           <img
             src={founderImg}
-            alt="Founder R. Dakshinamoorthy"
+            alt="Mr. Dakshinamoorthy Raghavan"
             loading="lazy"
             width={896}
             height={1152}
-            className="relative aspect-[4/5] w-full rounded-2xl object-cover shadow-2xl"
+            className="mx-auto aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl"
           />
         </div>
         <div>
@@ -43,13 +42,14 @@ function Story() {
           <span className="gold-divider mt-4" />
           <div className="mt-5 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
-              Ponmani Real Estate was founded in the year <strong className="text-navy">2000</strong> in Thanjavur, Tamil Nadu, with a single mission — to give families an honest, transparent and reliable partner in their real-estate journey.
+              <strong className="text-navy">Mr. Dakshinamoorthy Raghavan</strong> was born in <strong className="text-navy">1969</strong> in Pattukkottai, Tamil Nadu. He began his career in the real estate industry at the age of 20, starting from the ground level and gaining strong practical experience in the field.
             </p>
             <p>
-              Our founder, <strong className="text-navy">R. Dakshinamoorthy</strong>, brings over <strong className="text-navy">36 years</strong> of personal industry experience into every transaction. From small first-time plots to multi-acre layout development, our work has always been rooted in legally verified properties, fair pricing and lifelong relationships.
+              He established his own real estate business in the year 2000. With over 26+ years of entrepreneurial experience and nearly 36 years of overall exposure in the real estate industry, he has developed deep expertise in real estate sales, brokerage, and property management.
             </p>
             <p>
-              Today, after 26+ years of business, thousands of satisfied clients across Thanjavur, Tamil Nadu and the NRI community continue to trust us with one of the most important decisions of their lives. As we welcome the next generation into the business, our promise remains unchanged — <em className="text-navy">trust above everything</em>.
+              Over the years, he has built a strong reputation through his dedication, industry knowledge, and consistent performance in the real estate sector. He continues to play an active role in business development and property-related services.
+              — <em className="text-navy">trust above everything</em>.
             </p>
           </div>
           <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -162,89 +162,6 @@ function TimelineItem({
   );
 }
 
-function Timeline() {
-  return (
-    <section className="bg-muted py-16 lg:py-24">
-      <div className="container-page">
-        <div className="text-center">
-          <span className="eyebrow">Our Journey</span>
-          <h2 className="section-title mt-3">Milestones Across Three Decades</h2>
-          <span className="gold-divider mt-4" />
-          <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground">
-            From a single honest deal in 1988 to thousands of trusted transactions today —
-            the story of a family business built on transparency and lifelong relationships.
-          </p>
-        </div>
-        <div className="relative mx-auto mt-16 max-w-5xl">
-          <ol className="space-y-0 lg:space-y-12">
-            {timeline.map((m, i) => (
-              <TimelineItem key={m.year} m={m} i={i} />
-            ))}
-          </ol>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// function FounderSection() {
-//   return (
-//     <section className="bg-background py-16 lg:py-24">
-//       <div className="container-page grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-//         <div className="lg:col-span-5">
-//           <div className="relative">
-
-//             <img
-//               src={founderImg}
-//               alt="R. Dakshinamoorthy"
-//               loading="lazy"
-//               width={896}
-//               height={1152}
-//               className="relative aspect-[4/5] w-full rounded-3xl object-cover shadow-2xl"
-//             />
-//           </div>
-//         </div>
-//         <div className="lg:col-span-7">
-//           <span className="eyebrow">Meet the Founder</span>
-//           <h2 className="section-title mt-3">R. Dakshinamoorthy</h2>
-//           <div className="mt-2 text-base font-semibold text-gold">
-//             Founder &amp; Managing Director · 36+ Years Experience
-//           </div>
-//           <span className="gold-divider mt-4" />
-//           <div className="mt-6 rounded-2xl border-gold/20 bg-white p-8 shadow-sm">
-//             <Quote className="size-7 text-gold" />
-//             <p className="mt-2 font-display text-xl italic leading-relaxed text-navy">
-//               Trust is earned through actions, not words.
-//             </p>
-//             <div className="mt-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-//               — R. Dakshinamoorthy, Founder
-//             </div>
-//           </div>
-//           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-//             Having entered the real-estate industry in the late 1980s, our founder built Ponmani
-//             Real Estate from the ground up — one honest deal at a time. His belief that
-//             relationships outlast transactions is the cornerstone on which the company stands today.
-//           </p>
-//           <div className="mt-6 grid gap-3 sm:grid-cols-3">
-//             {[
-//               { v: "36+", l: "Years Industry Experience" },
-//               { v: "1000+", l: "Families Assisted" },
-//               { v: "100%", l: "Verified Deals" },
-//             ].map((s) => (
-//               <div key={s.l} className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-//                 <div className="font-display text-2xl font-bold text-navy">{s.v}</div>
-//                 <div className="mt-1 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
-//                   {s.l}
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 function GuhanSection() {
   return (
     <section className="bg-white py-16 lg:py-20">
@@ -257,11 +174,13 @@ function GuhanSection() {
           </div>
           <span className="gold-divider mt-4" />
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Carrying forward the family legacy, D. Guhan leads business development and digital
-            strategy at Ponmani Real Estate. His focus is on bringing modern tools, transparent
-            online experiences and a stronger digital presence to a firm that has always
-            been about timeless trust.
+            <strong className="text-navy">Mr. Guhan Dakshinamoorthy</strong> was born in  <strong className="text-navy">2003</strong> in Thanjavur, Tamil Nadu. He is the son of Mr. Dakshinamoorthy Raghavan and is actively involved in the family real estate business.
           </p>
+<br />
+          <p>He holds a Bachelor of Engineering (B.E.) degree in Computer Science and Engineering (CSE). He brings strong skills in marketing, business development, and software/web development, focusing on driving business growth through modern technology and digital strategies.
+          </p><br />
+          
+          <p>He is passionate about learning all aspects of the real estate industry and combining technical knowledge with business experience to support the company’s expansion and long-term success.</p>
           <div className="mt-6 flex flex-wrap gap-3">
             {["Business Development", "Digital Strategy", "Client Relations"].map((t) => (
               <span
@@ -280,7 +199,7 @@ function GuhanSection() {
             loading="lazy"
             width={896}
             height={1152}
-            className="mx-auto aspect-[4/5] w-full max-w-sm rounded-3xl object-cover shadow-2xl"
+            className="mx-auto aspect-[4/5] w-full rounded-3xl object-cover object-[center_15%] shadow-2xl"
           />
         </div>
       </div>

@@ -45,7 +45,6 @@ function HomePage() {
       <Services />
       <FeaturedProperties />
       <WhyChoose />
-      <Testimonials />
       <CtaBanner />
     </>
   );
@@ -156,7 +155,7 @@ function AboutPreview() {
     <section className="bg-background py-16 lg:py-24">
       <div className="container-page grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
-          <div/>
+          <div />
           <div />
           <img
             src={heroBg}
@@ -172,22 +171,20 @@ function AboutPreview() {
           <h2 className="section-title mt-3">A Legacy Built on Trust</h2>
           <span className="gold-divider mt-4" />
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            Founded in the year <strong className="text-navy">2000</strong>, Ponmani Real Estate
-            is one of Thanjavur's most respected family-owned real estate firms. Backed by 36+
-            years of personal industry experience, we have helped thousands of families and
-            investors make confident property decisions.
+            Founded in the year <strong className="text-navy">2000</strong>, Ponmani Real Estate is one of Thanjavur’s most trusted real estate firms. With over 36+ years of combined industry expertise, we have guided thousands of families and investors in making confident and secure property decisions.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            We believe real estate is more than a transaction — it's a relationship built across
-            generations. From the first plot you buy to the layout you develop, our team is
-            committed to transparent dealings, legally verified properties and lifelong support.
+            We operate with a strong commitment to transparency, trust, and long-term value creation in every transaction. Our focus is to ensure clients receive legally verified properties, clear documentation, and reliable guidance throughout their real estate journey.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            From first-time buyers to experienced investors, we provide end-to-end support in land acquisition, property sales, and investment planning across Thanjavur and surrounding regions.
           </p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {[
-              "Family-Owned Business",
-              "Founder-Led Approach",
-              "Transparent Transactions",
-              "Legally Verified Properties",
+              "36+ Years of Real Estate Expertise",
+              "Legally Verified & Clear-Title Properties",
+              "Transparent Pricing & Documentation",
+              "Founder-Led Professional Approach",
             ].map((t) => (
               <div key={t} className="flex items-center gap-2 text-sm text-navy">
                 <ShieldCheck className="size-4 shrink-0 text-gold" />
@@ -216,8 +213,11 @@ function Services() {
           <h2 className="section-title mt-3">What We Offer</h2>
           <span className="gold-divider mt-4" />
           <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground">
-            A complete suite of real estate services trusted by Thanjavur families,
-            investors and NRIs for over two decades.
+            We provide residential plots, layouts, and premium land options across Thanjavur.
+We specialize in legally verified and clear-title property transactions.
+We assist clients in buying, selling, and real estate investment guidance.
+We ensure transparent pricing with complete documentation support.
+We deliver trusted and professional real estate services with reliable support.
           </p>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -229,7 +229,7 @@ function Services() {
                 className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-[0_8px_25px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-[#D4A017]/40 hover:shadow-[0_20px_45px_rgba(0,0,0,0.12)]"
               >
                 <span className="absolute right-0 top-0 h-1 w-full bg-gradient-to-r from-gold to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-               <div className="grid size-16 place-items-center rounded-xl bg-navy text-gold shadow-[0_10px_25px_rgba(15,23,42,0.18)] transition-all duration-300 group-hover:scale-110 group-hover:bg-gold group-hover:text-navy">
+                <div className="grid size-16 place-items-center rounded-xl bg-navy text-gold shadow-[0_10px_25px_rgba(15,23,42,0.18)] transition-all duration-300 group-hover:scale-110 group-hover:bg-gold group-hover:text-navy">
                   <Icon className="size-6" />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold text-navy">{s.title}</h3>
@@ -329,88 +329,17 @@ function WhyChoose() {
   );
 }
 
-function Testimonials() {
-  const items = [
-    {
-      name: "Mr. Senthil Kumar",
-      role: "Plot Buyer · Vallam",
-      text:
-        "Ponmani Real Estate guided us patiently through every step of buying our first plot. The documentation was flawless and there were absolutely no hidden surprises.",
-    },
-    {
-      name: "Mrs. Lakshmi R.",
-      role: "NRI Investor · Singapore",
-      text:
-        "As an NRI it was difficult to find someone I could trust back home. Dakshinamoorthy sir handled everything end-to-end, exactly as promised.",
-    },
-    {
-      name: "Mr. Arun & Family",
-      role: "Layout Buyer · Thanjavur",
-      text:
-        "Three generations of our family have bought property through them. Their honesty and long-term relationship is something rare today.",
-    },
-  ];
-  return (
-    <section className="bg-muted py-16 lg:py-24">
-      <div className="container-page">
-        <div className="text-center">
-          <span className="eyebrow">Client Voices</span>
-          <h2 className="section-title mt-3">What Our Clients Say</h2>
-          <span className="gold-divider mt-4" />
-        </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {items.map((t) => (
-            <div
-              key={t.name}
-              className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-2 hover:border-gold/40 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]"
-            >
-              
-              <div className="flex gap-1 rounded-full bg-white px-3 py-1 w-fit">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="size-4 fill-gold" />
-                ))}
-              </div>
-              <p className="mt-5 text-[15px] leading-8 text-slate-600">
-                &ldquo;{t.text}&rdquo;
-              </p>
-              <div className="mt-6 border-t border-slate-200 pt-5">
-                <div className="font-display text-xl font-semibold text-navy">{t.name}</div>
-                <div className="text-xs text-muted-foreground">{t.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function CtaBanner() {
   return (
-    <section className="relative overflow-hidden bg-navy py-20 text-navy-foreground lg:py-28">
-      <div
-        className="absolute inset-0 opacity-25"
-        style={{
-          backgroundImage: `url(${ctaBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(135deg, oklch(0.2 0.04 265 / 0.92) 0%, oklch(0.2 0.04 265 / 0.78) 100%)",
-        }}
-      />
+    <section className="relative overflow-hidden bg-[whitesmoke]  py-20 text-navy-foreground lg:py-28">
       <div className="container-page relative text-center">
         <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-gold">
           <span className="h-px w-8 bg-gold" /> Get in Touch <span className="h-px w-8 bg-gold" />
         </span>
-        <h2 className="mx-auto mt-4 max-w-3xl font-display text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+        <h2 className="mx-auto mt-4 max-w-3xl font-display text-3xl font-bold text-black sm:text-4xl lg:text-5xl">
           Ready to Find Your Ideal Property?
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+        <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
           Speak with our team today for trusted real estate guidance, legally verified properties
           and confident investment opportunities across Thanjavur.
         </p>

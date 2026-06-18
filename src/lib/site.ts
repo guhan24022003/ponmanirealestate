@@ -8,14 +8,14 @@ export const site = {
   tagline: "Where Trust Meets Opportunity",
   motto: "Building Trust Through Every Property",
   location: "Thanjavur, Tamil Nadu",
-  address: "Thanjavur, Tamil Nadu, India",
+  address: "No. 9/2886, Srinivasam Pillai Road, Santhapillai Gate Bus Stop, Thanjavur - 613001",
   phone: "+91 70107 97593",
   phoneRaw: "+917010797593",
   whatsapp: "917010797593",
-  email: "info@ponmanirealestate.com",
+  email: "guhanvikas@gmail.com",
   instagram: "https://instagram.com/ponmanirealestate",
-  mapEmbed:
-    "https://www.google.com/maps?q=Thanjavur,Tamil+Nadu&output=embed",
+mapEmbed:
+"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4542443108076!2d79.13973370129698!3d10.776479407608349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab9003b5a4c4f%3A0x1081b86d90b246fe!2sPonmani%20Real-estate!5e0!3m2!1sen!2sin!4v1781793047389!5m2!1sen!2sin",
 };
 
 export const whatsappLink = (msg = "Hi, I'd like to know more about your properties.") =>
